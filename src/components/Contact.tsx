@@ -46,7 +46,7 @@ export const Contact = () => {
           <Typography fontSize={isMobile ? 15 : 20} marginBottom={3}>
             <Grid container alignItems={"center"}>
               <img src="images/email.svg" style={{ width: 30 }} />
-              email@mail.com
+              alenilsondasilvacruz@gmail.com
             </Grid>
           </Typography>
           <Grid
