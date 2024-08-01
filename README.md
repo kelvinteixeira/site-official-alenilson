@@ -5,9 +5,9 @@
 Esta aplicação foi cuidadosamente concebida para a o psicologo Alenilson Cruz, com o objetivo de investimento pessoal em seu trabalho,enriquecer a experiência dos clientes e fornecer informações detalhadas de como são oferecidos os seus serviços.
 
 <div align="center">
-  <img src='./public/cover1.png'>
-  <img src='./public/cover2.png'>
-  <img src='./public/cover3.png'>
+  <img src='./public/images/cover1.png'>
+  <img src='./public/images/cover2.png'>
+  <img src='./public/images/cover3.png'>
 </div>
 
 #### <div align="right">- Projeto Em andamento 🟢 <div>
