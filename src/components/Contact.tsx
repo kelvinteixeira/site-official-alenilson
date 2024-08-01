@@ -9,7 +9,7 @@ export const Contact = () => {
         container
         alignItems={"center"}
         justifyContent={"space-around"}
-        height={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
+        height={isMobile ? "60vh" : isTablet ? "auto" : "100vh"}
         sx={{
           backgroundColor: "#6b8cb624",
         }}
@@ -84,8 +84,8 @@ export const Contact = () => {
         <img
           src="/images/alenilson2.png"
           style={{
-            width: isMobile ? 220 : isTablet ? 270 : 300,
-            bottom: isMobile ? -4200 : isTablet ? -3350 : -3755,
+            width: isMobile ? 200 : isTablet ? 270 : 300,
+            bottom: isMobile ? -4270 : isTablet ? -3350 : -3755,
             left: isMobile ? 200 : isTablet ? 450 : 700,
             position: "absolute",
             zIndex: 1,
@@ -101,7 +101,7 @@ export const Contact = () => {
           alignItems={"center"}
           sx={{ bgcolor: "#fff", height: 120 }}
         >
-          <Typography fontSize={isMobile ? 11 : isTablet ? 13 : 15}>
+          <Typography fontSize={isMobile ? 10 : isTablet ? 13 : 15}>
             Atenção: Este site não oferece atendimento imediato a pessoas em
             crise suicida.
           </Typography>
