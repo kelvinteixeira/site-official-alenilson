@@ -9,7 +9,7 @@ export const Contact = () => {
         container
         alignItems={"center"}
         justifyContent={"space-around"}
-        height={isMobile ? "60vh" : isTablet ? "auto" : "100vh"}
+        height={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
         sx={{
           backgroundColor: "#6b8cb624",
         }}
@@ -43,26 +43,33 @@ export const Contact = () => {
               83 98751-1576
             </Grid>
           </Typography>
-          <Typography fontSize={isMobile ? 15 : 20} marginBottom={3}>
+          <Typography fontSize={isMobile ? 15 : 17} marginBottom={3}>
             <Grid container alignItems={"center"}>
               <img src="images/email.svg" style={{ width: 30 }} />
               alenilsondasilvacruz@gmail.com
             </Grid>
           </Typography>
           <Grid
+            container
             alignItems={"center"}
-            justifyContent={isMobile ? "left" : "center"}
+            justifyContent={isMobile ?"center": "start"}
             marginLeft={isMobile ? 0 : 4}
             marginRight={isMobile ? 15 : 0}
           >
-            <IconButton href="https://www.instagram.com/alenilson.cruz?utm_source=qr&igsh=MThmNmwzZnhwcjE1dQ%3D%3D" target="_blank">
+            <IconButton
+              href="https://www.instagram.com/alenilson.cruz?utm_source=qr&igsh=MThmNmwzZnhwcjE1dQ%3D%3D"
+              target="_blank"
+            >
               <img
                 src="images/instagram.svg"
                 alt="instagram-logo"
                 style={{ width: isMobile ? 20 : 40 }}
               />
             </IconButton>
-            <IconButton href="https://www.facebook.com/lelo.silva.1865?mibextid=ZbWKwL" target="_blank">
+            <IconButton
+              href="https://www.facebook.com/lelo.silva.1865?mibextid=ZbWKwL"
+              target="_blank"
+            >
               <img
                 src="images/facebook.svg"
                 alt="facebook-logo"
@@ -87,7 +94,7 @@ export const Contact = () => {
             width: isMobile ? 200 : isTablet ? 270 : 300,
             bottom: isMobile ? -4270 : isTablet ? -3350 : -3755,
             left: isMobile ? 200 : isTablet ? 450 : 700,
-            position: "absolute",
+            position: isMobile ? "initial" : "absolute",
             zIndex: 1,
             overflow: "hidden",
             filter: "drop-shadow(0 0 0.75rem #0202024f)",
