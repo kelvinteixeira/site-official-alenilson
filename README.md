@@ -1,8 +1,8 @@
-# Projeto Bellevita
+# Projeto Site institucional de Alenilson Cruz
 
 ## Sobre o projeto:
 
-Esta aplicação foi cuidadosamente concebida para a o psicologo Alenilson Cruz, com o objetivo de investimento pessoal em seu trabalho,enriquecer a experiência dos clientes e fornecer informações detalhadas de como são oferecidos os seus serviços.
+Esta aplicação foi cuidadosamente concebida para a o psicólogo Alenilson Cruz, com o objetivo de investimento pessoal em seu trabalho,enriquecer a experiência dos clientes e fornecer informações detalhadas de como são oferecidos os seus serviços.
 
 <div align="center">
   <img src='./public/images/cover1.png'>
