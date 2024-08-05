@@ -29,7 +29,7 @@ export const Header = () => {
       {isTablet || isMobile ? (
         <Grid container justifyContent={"center"}>
           <img
-            style={{ width: isMobile ? 100 : 200, position: "absolute" }}
+            style={{ width: 200, position: "absolute" }}
             src="/images/AlenilsonLogo.png"
           />
         </Grid>

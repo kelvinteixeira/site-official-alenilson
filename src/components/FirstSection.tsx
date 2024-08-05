@@ -44,7 +44,7 @@ export const FirstSection = () => {
           </Typography>
           <Typography
             fontWeight={"bold"}
-            fontSize={isMobile ? 8 : 15}
+            fontSize={isMobile ? 10 : 15}
             marginBottom={1}
             align={isTablet ? "center" : "justify"}
           >
@@ -52,7 +52,7 @@ export const FirstSection = () => {
             que você merece.
           </Typography>
           <Typography
-            fontSize={isMobile ? 8 : 15}
+            fontSize={isMobile ? 10 : 15}
             marginBottom={2}
             align={isTablet ? "center" : "justify"}
           >
@@ -68,9 +68,9 @@ export const FirstSection = () => {
               sx={{
                 borderRadius: 10,
                 width: isMobile ? 200 : 320,
-                height: isMobile ? 20 : 50,
+                height: 50,
                 fontWeight: "bold",
-                fontSize: isMobile ? 10 : "auto",
+                fontSize: isMobile ? 12 : "auto",
               }}
             >
               Agendar atendimento!
