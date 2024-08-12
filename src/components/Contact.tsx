@@ -1,15 +1,15 @@
-import { Grid, IconButton, Typography, useMediaQuery } from "@mui/material";
+import { Grid, IconButton, Typography } from "@mui/material";
+import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
 
 export const Contact = () => {
-  const isMobile = useMediaQuery("(max-width:430px)");
-  const isTablet = useMediaQuery("(max-width:820px)");
+  const { getFontSize, isSmall, isExtraSmall, isMedium } =
+    useResponsiveLayout();
   return (
     <>
       <Grid
         container
         alignItems={"center"}
         justifyContent={"space-around"}
-        height={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
         sx={{
           backgroundColor: "#6b8cb624",
         }}
@@ -20,30 +20,48 @@ export const Contact = () => {
           sx={{
             bgcolor: "#fff",
             width: 500,
-            height: isMobile ? 250 : 300,
+            height: isExtraSmall || isSmall ? 250 : 300,
             borderRadius: 5,
           }}
         >
           <Typography
             fontWeight={"bolder"}
-            fontSize={isMobile ? 20 : 30}
+            fontSize={isExtraSmall || isSmall ? 20 : 30}
             color={"#6b8cb6"}
           >
             Vamos conversar
           </Typography>
-          <Typography fontSize={isMobile ? 13 : 15} marginBottom={2}>
+          <Typography
+            sx={{
+              fontSize: `${getFontSize(
+                isExtraSmall || isSmall ? 0.8 : isMedium ? 3 : 2
+              )}rem`,
+            }}
+            marginBottom={2}
+          >
             Atendimento presencial e online.
           </Typography>
           <Typography
-            fontSize={isMobile ? 15 : 20}
-            marginBottom={isMobile ? 1 : 2}
+            sx={{
+              fontSize: `${getFontSize(
+                isExtraSmall || isSmall ? 1 : isMedium ? 3 : 2
+              )}rem`,
+            }}
+            marginBottom={isExtraSmall || isSmall ? 1 : 2}
           >
             <Grid fontWeight={"bold"} container alignItems={"center"}>
               <img src="images/phone.svg" style={{ width: 30 }} />
               83 98751-1576
             </Grid>
           </Typography>
-          <Typography fontSize={isMobile ? 15 : 17} marginBottom={3}>
+          <Typography
+            sx={{
+              fontSize: `${getFontSize(
+                isExtraSmall || isSmall ? 0.7 : isMedium ? 3 : 2
+              )}rem`,
+            }}
+            marginBottom={3}
+          >
             <Grid container alignItems={"center"}>
               <img src="images/email.svg" style={{ width: 30 }} />
               alenilsondasilvacruz@gmail.com
@@ -51,10 +69,8 @@ export const Contact = () => {
           </Typography>
           <Grid
             container
-            alignItems={"center"}
-            justifyContent={isMobile ?"center": "start"}
-            marginLeft={isMobile ? 0 : 4}
-            marginRight={isMobile ? 15 : 0}
+            marginLeft={isExtraSmall || isSmall ? 0 : 4}
+            marginRight={isExtraSmall || isSmall ? 15 : 0}
           >
             <IconButton
               href="https://www.instagram.com/alenilson.cruz?utm_source=qr&igsh=MThmNmwzZnhwcjE1dQ%3D%3D"
@@ -63,7 +79,7 @@ export const Contact = () => {
               <img
                 src="images/instagram.svg"
                 alt="instagram-logo"
-                style={{ width: isMobile ? 20 : 40 }}
+                style={{ width: isExtraSmall || isSmall ? 20 : 40 }}
               />
             </IconButton>
             <IconButton
@@ -73,7 +89,7 @@ export const Contact = () => {
               <img
                 src="images/facebook.svg"
                 alt="facebook-logo"
-                style={{ width: isMobile ? 20 : 40 }}
+                style={{ width: isExtraSmall || isSmall ? 20 : 40 }}
               />
             </IconButton>
             <IconButton
@@ -83,35 +99,10 @@ export const Contact = () => {
               <img
                 src="images/linkedin.svg"
                 alt="linkedin-logo"
-                style={{ width: isMobile ? 20 : 40 }}
+                style={{ width: isExtraSmall || isSmall ? 20 : 40 }}
               />
             </IconButton>
           </Grid>
-        </Grid>
-        <Grid
-          marginBottom={2}
-          container
-          direction={"column"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          sx={{ bgcolor: "#fff", height: 120 }}
-        >
-          <Typography fontSize={isMobile ? 10 : isTablet ? 13 : 15}>
-            Atenção: Este site não oferece atendimento imediato a pessoas em
-            crise suicida.
-          </Typography>
-          <Typography
-            fontSize={isTablet ? 15 : 20}
-            textTransform={"uppercase"}
-            fontWeight={"bolder"}
-          >
-            Em caso de crise ligue para o CVV - 188
-          </Typography>
-          <Typography fontSize={isTablet ? 11 : 15} align="center">
-            Em caso de emergência, procure o hospital mais próximo. Havendo
-            risco de morte, ligue imediatamente para o SAMU (192) ou Corpo de
-            Bombeiro (193).
-          </Typography>
         </Grid>
       </Grid>
     </>

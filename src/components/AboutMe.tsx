@@ -36,7 +36,7 @@ export const AboutMe = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
             Olá, muito prazer! Sou Alenilson, psicólogo clínico e hipnoterapeuta
             com uma trajetória em atendimentos presenciais e online desde 2016,
@@ -52,7 +52,7 @@ export const AboutMe = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
             Minha paixão pela mente humana sempre me guiou, amo ser psicólogo, o
             sentido da minha vida consiste em ser um facilitador para pessoas
@@ -66,12 +66,13 @@ export const AboutMe = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
-            Meu objetivo na terapia psicológica é facilitar o autoconhecimento, e para isso,
-            adoto uma postura acolhedora, ética e com uma escuta atenta em cada
-            atendimento. Convido você a embarcar nessa jornada comigo, rumo ao
-            desenvolvimento emocional que a terapia pode proporcionar.
+            Meu objetivo na terapia psicológica é facilitar o autoconhecimento,
+            e para isso, adoto uma postura acolhedora, ética e com uma escuta
+            atenta em cada atendimento. Convido você a embarcar nessa jornada
+            comigo, rumo ao desenvolvimento emocional que a terapia pode
+            proporcionar.
           </Typography>
           <Typography
             fontSize={isMobile ? 12 : isTablet ? 15 : 20}
@@ -79,7 +80,6 @@ export const AboutMe = () => {
             color={"secondary"}
             marginBottom={1}
             align={isMobile ? "center" : "right"}
-            
           >
             Vamos juntos iniciar essa jornada?
           </Typography>
@@ -115,7 +115,7 @@ export const AboutMe = () => {
         >
           <img
             src="images/AlenilsonRelogio.png"
-            style={{ width: isTablet ? 500 : 600 }}
+            style={{ width: isTablet ? 400 : 600 }}
           />
         </Grid>
       </Grid>

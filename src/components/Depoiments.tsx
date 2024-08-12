@@ -1,23 +1,24 @@
-import { Grid, Rating, Typography, useMediaQuery } from "@mui/material";
+import { Grid, Rating, Typography } from "@mui/material";
 import { depoiments } from "../services/api";
+import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
 
 export const Depoiments = () => {
-  const isMobile = useMediaQuery("(max-width:430px)");
-  const isTablet = useMediaQuery("(max-width:820px)");
+  const { isSmall, isExtraSmall, isMedium } =
+    useResponsiveLayout();
   return (
     <>
       <Grid
         container
-        padding={isTablet ? 5 : 2}
-        height={isMobile ? "auto" : isTablet ? "auto" : "auto"}
+        padding={isMedium ? 5 : 2}
+        height={"auto"}
         justifyContent={"center"}
       >
         <Typography
-          fontSize={isMobile ? 17 : 20}
+          fontSize={isExtraSmall || isSmall ? 17 : 20}
           align="center"
           fontWeight={"bold"}
-          marginTop={isTablet || isMobile ? 0 : 10}
-          marginBottom={isMobile ? 2 : 5}
+          marginTop={isMedium || isExtraSmall || isSmall ? 0 : 10}
+          marginBottom={isExtraSmall || isSmall ? 2 : 5}
         >
           Depoimentos de <span className="highlight">Pacientes</span>
         </Typography>
@@ -26,7 +27,7 @@ export const Depoiments = () => {
             <Grid
               key={depoiments.id}
               item
-              width={isTablet ? 300 : 350}
+              xs={isExtraSmall ? 12 : 5}
               sx={{
                 bgcolor: "#6b8cb624",
                 height: "auto",
@@ -47,11 +48,7 @@ export const Depoiments = () => {
                   readOnly
                 />
               </Grid>
-              <Typography
-                fontSize={isMobile ? 12 : 14}
-                align="justify"
-                marginBottom={1}
-              >
+              <Typography variant="body1" fontSize={isExtraSmall || isSmall ? 12 : 14} marginBottom={1}>
                 {depoiments.text}
               </Typography>
             </Grid>
@@ -63,10 +60,10 @@ export const Depoiments = () => {
         container
         justifyContent={"center"}
         alignItems={"center"}
-        sx={{ bgcolor: "#6b8cb624", height: isMobile ? 40 : 80 }}
+        sx={{ bgcolor: "#6b8cb624", height: isExtraSmall || isSmall ? 40 : 80 }}
       >
         <Typography
-          fontSize={isMobile ? 8 : isTablet ? 15 : 20}
+          fontSize={isExtraSmall || isSmall ? 8 : isMedium ? 15 : 20}
           className="highlight"
           fontWeight={"bolder"}
           textTransform={"uppercase"}

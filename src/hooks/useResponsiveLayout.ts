@@ -2,8 +2,8 @@ import { useMediaQuery } from "@mui/material";
 
 export const useResponsiveLayout = () => {
   const isExtraSmall = useMediaQuery("(max-width:575px)");
-  const isSmall = useMediaQuery("(min-width:576px) and (max-width:767px)");
-  const isMedium = useMediaQuery("(min-width:768px) and (max-width:991px)");
+  const isSmall = useMediaQuery("(min-width:576px) and (max-width:741px)");
+  const isMedium = useMediaQuery("(min-width:742px) and (max-width:991px)");
   const isLarge = useMediaQuery("(min-width:992px) and (max-width:1199px)");
   const isExtraLarge = useMediaQuery("(min-width:1200px)");
 

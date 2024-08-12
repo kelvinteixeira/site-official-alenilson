@@ -15,10 +15,11 @@ export const FirstSection = () => {
       <Grid
         container
         className="bg"
+        padding={2}
         justifyContent={
           isMedium || isSmall || isExtraSmall ? "center" : "right"
         }
-        height={isSmall || isExtraSmall ? "auto" : isMedium ? "40vh" : "100vh"}
+        height={isSmall || isExtraSmall ? "auto" : isMedium ? "auto" : "100vh"}
         sx={{
           backgroundColor: "#a8bbeca0",
         }}
@@ -45,7 +46,7 @@ export const FirstSection = () => {
             marginBottom={2}
             sx={{
               fontSize: `${getFontSize(
-                isExtraSmall ? 1.2 : isSmall ? 1.4 : 3
+                isExtraSmall ? 1.2 : isSmall ? 1.4 : isMedium ? 4 : 3
               )}rem`,
               textTransform: "uppercase",
             }}
@@ -76,7 +77,7 @@ export const FirstSection = () => {
           >
             Conheça mais sobre a terapia agende o seu atendimento agora.
           </Typography>
-          <Grid container justifyContent={"center"}>
+          <Grid container justifyContent={"center"} >
             <Button
               onClick={() =>
                 window.open("https://api.whatsapp.com/send?phone=5583987511576")

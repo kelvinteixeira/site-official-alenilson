@@ -4,9 +4,9 @@ import { Contact } from "../components/Contact";
 import { Depoiments } from "../components/Depoiments";
 import FAQ from "../components/FAQ";
 import { FirstSection } from "../components/FirstSection";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Psychotherapy } from "../components/Psychotherapy";
-import { WhatsAppButton } from "../components/WhatsAppButton";
 import { Element } from "react-scroll";
 
 export const Home = () => {
@@ -33,7 +33,7 @@ export const Home = () => {
       <Element id="contact" name="contact">
         <Contact />
       </Element>
-      <WhatsAppButton />
+      <Footer />
     </>
   );
 };

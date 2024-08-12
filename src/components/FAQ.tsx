@@ -22,7 +22,7 @@ export default function FAQ() {
           fontWeight={"bold"}
           marginBottom={isMobile ? 2 : 5}
         >
-          Perguntas <span className="highlight">Frequentes</span>
+          Perguntas <span className="highlight">Comuns</span>
         </Typography>
         {questions.map((question) => (
           <Accordion sx={{ bgcolor: "#6b8cb624", marginBottom: 2 }}>
