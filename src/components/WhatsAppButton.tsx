@@ -2,7 +2,7 @@ import { IconButton } from "@mui/material";
 import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
 
 export const WhatsAppButton = () => {
-  const { isExtraSmall, isSmall } = useResponsiveLayout();
+  const { isExtraSmall } = useResponsiveLayout();
   const handleWhatsAppButtonClick = () => {
     window.open("https://api.whatsapp.com/send?phone=5583987511576");
   };
