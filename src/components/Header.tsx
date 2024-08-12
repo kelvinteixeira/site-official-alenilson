@@ -26,26 +26,20 @@ export const Header = () => {
 
   return (
     <>
-      {isTablet || isMobile ? (
-        <Grid container justifyContent={"center"}>
-          <img
-            style={{ width: 200, position: "absolute" }}
-            src="/images/AlenilsonLogo.png"
-          />
-        </Grid>
-      ) : (
+      {isTablet || isMobile ? null : (
         <Grid
           container
           position={"fixed"}
           justifyContent={"space-around"}
           alignItems={"center"}
           height={isTablet ? 75 : 90}
+          sx={{ color: "#fff" }}
           className={isScrolled ? "dark-header" : ""}
         >
           <Grid>
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
                 textTransform: "none",
@@ -66,7 +60,7 @@ export const Header = () => {
 
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
 
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
@@ -82,7 +76,7 @@ export const Header = () => {
             </Button>
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
 
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
@@ -98,7 +92,7 @@ export const Header = () => {
             </Button>
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
 
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
@@ -114,12 +108,12 @@ export const Header = () => {
                 duration={500}
                 offset={-50}
               >
-                Psicoterapia
+                Hipnose clínica
               </Link>
             </Button>
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
 
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
@@ -135,7 +129,7 @@ export const Header = () => {
             </Button>
             <Button
               sx={{
-                color: "#1A4583",
+                color: isScrolled ? "#1A4583" : "#fff",
 
                 fontSize: isTablet ? 14 : 17,
                 letterSpacing: 2,
@@ -150,10 +144,6 @@ export const Header = () => {
               </Link>
             </Button>
           </Grid>
-          <img
-            style={{ width: 150, height: 90 }}
-            src="/images/AlenilsonLogo.png"
-          />
         </Grid>
       )}
     </>

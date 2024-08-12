@@ -13,47 +13,82 @@ export const AboutPsychotherapy = () => {
       >
         <Grid item xs={isMobile ? 11 : 6} sx={{ lineHeight: 1.6 }}>
           <Typography
-            fontSize={isMobile ? 17 : 25}
+            fontSize={isMobile ? 17 : 20}
             fontWeight={"bold"}
             marginBottom={2}
             align="center"
           >
-            Por que a <span className="highlight">Psicanálise?</span>
+            Por que fazer tratamento psicológico com{" "}
+            <Typography
+              fontSize={isMobile ? 17 : 20}
+              fontWeight={"bold"}
+              component={"span"}
+              className="highlight"
+              
+            >
+              Hipnose Clínica??
+            </Typography>
           </Typography>
 
           <Typography
             fontSize={isMobile ? 10 : isTablet ? 12 : 15}
             align="justify"
             marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
           >
-            A psicanálise é uma ferramenta poderosa para o autoconhecimento e a
-            compreensão profunda dos nossos comportamentos, pensamentos e
-            emoções. Ela nos permite explorar o inconsciente, onde muitas das
-            nossas experiências passadas, desejos e conflitos estão armazenados
-            e influenciam nossas vidas de maneiras que nem sempre percebemos. Ao
-            trazer à tona esses conteúdos ocultos, a psicanálise nos ajuda a
-            identificar padrões que podem estar limitando nosso bem-estar e
-            desenvolvimento pessoal. Esse processo de introspecção nos
-            proporciona uma maior consciência de nós mesmos e nos permite tomar
-            decisões mais conscientes e autênticas, livres das amarras do
-            passado.
+            Você dever ter assistido vídeos com pessoas sendo hipnotizadas em
+            que elas esqueciam por um certo momento o próprio nome, ou comiam
+            uma cebola demonstrando sentir o sabor de uma maçã. Essa experiência
+            é o que denominamos de alucinação positiva hipnótica. Uma
+            experiência proporcionada pela indução hipnótica num contexto de
+            Hipnose de Entretenimento. No entanto, para vias de tratamento com
+            finalidade terapêutica, num contexto de vida no qual o paciente
+            deseja a cura ou melhora do seu contexto de vida psicológica e
+            noética, não será essas experiências citadas que realizo em minhas
+            sessões de Hipnose Clínica.
           </Typography>
 
           <Typography
             fontSize={isMobile ? 10 : isTablet ? 12 : 15}
             align="justify"
             marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
           >
-            Além disso, a psicanálise oferece um espaço seguro e acolhedor para
-            expressar pensamentos e sentimentos que muitas vezes não temos a
-            oportunidade de compartilhar no cotidiano. Esse ambiente de escuta
-            qualificada, onde não há julgamentos, permite uma reflexão mais
-            profunda sobre nossas vivências, medos e ansiedades. O terapeuta,
-            com sua formação específica, nos guia nesse processo, ajudando a
-            desvendar camadas da nossa personalidade que muitas vezes não
-            conhecemos. Através da psicanálise, é possível alcançar uma
-            transformação interna significativa, levando a uma vida mais
-            equilibrada, saudável e satisfatória.
+            Meu trabalho como hipnólogo clínico é fundamentado na teoria e
+            prática do célebre Milton Hyland Erickson, psicanalista e hipnólogo
+            clínico norte-americano, que desenvolveu a hipnose conversacional.
+            Milton Erickson foi um homem ético que se dedicou ao desenvolvimento
+            e aplicabilidade da Hipnose com finalidade a libertar o ser humano
+            dos processos dolorosos inconscientes. O próprio Milton Erickson
+            superou graves processos de adoecimento com a vivência da
+            auto-hipnose.
+          </Typography>
+          <Typography
+            fontSize={isMobile ? 10 : isTablet ? 12 : 15}
+            align="justify"
+            marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
+          >
+            A Hipnose Clínica que desenvolvo tem como finalidade a
+            ressignificação de memórias traumáticas que, inconscientemente,
+            influenciam sua vida psicológica. São incontáveis os casos clínicos
+            que pessoas diagnosticadas com Transtornos de Ansiedade, Depressão
+            Grave, dentre outras psicopatologias, sofreram tendo como causas
+            memórias traumáticas que não raramente são geradoras de traços
+            disfuncionais da personalidade. Com os recursos terapêuticos da
+            Hipnose puderam recomeçar suas vidas.
+          </Typography>
+          <Typography
+            fontSize={isMobile ? 10 : isTablet ? 12 : 15}
+            align="justify"
+            marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
+          >
+            Convido-te a iniciar essa jornada nos labirintos da tua mente para poderes estar em outros níveis de realizações emocionais e noética.
           </Typography>
         </Grid>
         <Grid

@@ -35,6 +35,8 @@ export const AboutMe = () => {
             fontSize={isMobile ? 10 : isTablet ? 12 : 15}
             align="justify"
             marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
           >
             Olá, muito prazer! Sou Alenilson, psicólogo clínico e hipnoterapeuta
             com uma trajetória em atendimentos presenciais e online desde 2016,
@@ -49,6 +51,8 @@ export const AboutMe = () => {
             fontSize={isMobile ? 10 : isTablet ? 12 : 15}
             align="justify"
             marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
           >
             Minha paixão pela mente humana sempre me guiou, amo ser psicólogo, o
             sentido da minha vida consiste em ser um facilitador para pessoas
@@ -61,8 +65,10 @@ export const AboutMe = () => {
             fontSize={isMobile ? 10 : isTablet ? 12 : 15}
             align="justify"
             marginBottom={1}
+            variant="body2"
+            sx={{textIndent: "20px"}}
           >
-            Meu objetivo na terapia é facilitar o autoconhecimento, e para isso,
+            Meu objetivo na terapia psicológica é facilitar o autoconhecimento, e para isso,
             adoto uma postura acolhedora, ética e com uma escuta atenta em cada
             atendimento. Convido você a embarcar nessa jornada comigo, rumo ao
             desenvolvimento emocional que a terapia pode proporcionar.
@@ -73,6 +79,7 @@ export const AboutMe = () => {
             color={"secondary"}
             marginBottom={1}
             align={isMobile ? "center" : "right"}
+            
           >
             Vamos juntos iniciar essa jornada?
           </Typography>

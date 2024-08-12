@@ -88,18 +88,6 @@ export const Contact = () => {
             </IconButton>
           </Grid>
         </Grid>
-        <img
-          src="/images/alenilson2.png"
-          style={{
-            width: isMobile ? 200 : isTablet ? 270 : 300,
-            bottom: isMobile ? -4270 : isTablet ? -3350 : -3755,
-            left: isMobile ? 200 : isTablet ? 450 : 700,
-            position: isMobile ? "initial" : "absolute",
-            zIndex: 1,
-            overflow: "hidden",
-            filter: "drop-shadow(0 0 0.75rem #0202024f)",
-          }}
-        />
         <Grid
           marginBottom={2}
           container
