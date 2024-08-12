@@ -5,7 +5,7 @@ export const Footer = () => {
   const { getFontSize, isSmall, isExtraSmall, isMedium } =
     useResponsiveLayout();
   return (
-    <Box padding={2} marginBottom={6}>
+    <Box padding={2} marginBottom={7}>
       <Typography
       marginBottom={1}
         align="center"
