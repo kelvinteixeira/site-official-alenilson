@@ -1,12 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
-import { WhatsAppButton } from "./WhatsAppButton";
 
 export const Footer = () => {
   const { getFontSize, isSmall, isExtraSmall, isMedium } =
     useResponsiveLayout();
   return (
-    <Box padding={2}>
+    <Box padding={2} marginBottom={6}>
       <Typography
       marginBottom={1}
         align="center"
@@ -65,7 +64,6 @@ export const Footer = () => {
         Em caso de emergência, procure o hospital mais próximo. Havendo risco de
         morte, ligue imediatamente para o SAMU (192) ou Corpo de Bombeiro (193).
       </Typography>
-      <WhatsAppButton />
     </Box>
   );
 };

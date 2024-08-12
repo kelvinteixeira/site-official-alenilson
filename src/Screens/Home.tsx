@@ -8,6 +8,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Psychotherapy } from "../components/Psychotherapy";
 import { Element } from "react-scroll";
+import { WhatsAppButton } from "../components/WhatsAppButton";
 
 export const Home = () => {
   return (
@@ -34,6 +35,7 @@ export const Home = () => {
         <Contact />
       </Element>
       <Footer />
+      <WhatsAppButton/>
     </>
   );
 };
