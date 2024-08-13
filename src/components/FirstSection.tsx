@@ -102,7 +102,7 @@ export const FirstSection = () => {
               src="/images/alenilson2.png"
               style={{
                 width: 350,
-                bottom: isExtraLarge ? -207 : 0,
+                bottom: 0,
                 left: 0,
                 zIndex: 0,
                 position: "absolute",
