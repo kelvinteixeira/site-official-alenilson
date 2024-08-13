@@ -19,7 +19,7 @@ export const FirstSection = () => {
         justifyContent={
           isMedium || isSmall || isExtraSmall ? "center" : "right"
         }
-        height={isSmall || isExtraSmall ? "auto" : isMedium ? "auto" : "100vh"}
+        height={isLarge  ? "100vh" : "auto"}
         sx={{
           backgroundColor: "#a8bbeca0",
         }}
@@ -30,7 +30,7 @@ export const FirstSection = () => {
           padding={2}
           marginTop={isLarge || isExtraLarge ? 5 : 0}
         >
-          <Grid container justifyContent={'center'}>
+          <Grid container justifyContent={"center"}>
             <img
               style={{
                 width: isExtraSmall ? 250 : 400,
@@ -77,7 +77,7 @@ export const FirstSection = () => {
           >
             Conheça mais sobre a terapia agende o seu atendimento agora.
           </Typography>
-          <Grid container justifyContent={"center"} >
+          <Grid container justifyContent={"center"}>
             <Button
               onClick={() =>
                 window.open("https://api.whatsapp.com/send?phone=5583987511576")
@@ -102,7 +102,7 @@ export const FirstSection = () => {
               src="/images/alenilson2.png"
               style={{
                 width: 350,
-                bottom: 0,
+                bottom: isExtraLarge ? -207 : 0,
                 left: 0,
                 zIndex: 0,
                 position: "absolute",

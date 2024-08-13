@@ -10,7 +10,7 @@ export const Psychotherapy = () => {
         justifyContent={"space-around"}
         alignItems={"center"}
         padding={isTablet ? 5 : 2}
-        height={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
+        height={"auto" }
       >
         <Grid
           item

@@ -9,7 +9,7 @@ export const AboutPsychotherapy = () => {
         container
         alignItems={"center"}
         justifyContent={"space-around"}
-        height={isMobile ? "auto" : isTablet ? "auto" : "100vh"}
+        height={"auto"}
       >
         <Grid item xs={isMobile ? 11 : 6} sx={{ lineHeight: 1.6 }}>
           <Typography
