@@ -22,11 +22,11 @@ export const Home = () => {
       <Element id="about-me" name="about-me">
         <AboutMe />
       </Element>
-      <Element id="depoiments" name="depoiments">
-        <Depoiments />
-      </Element>
       <Element id="psychotherapy" name="psychotherapy">
         <AboutPsychotherapy />
+      </Element>
+      <Element id="depoiments" name="depoiments">
+        <Depoiments />
       </Element>
       <Element id="faq" name="faq">
         <FAQ />

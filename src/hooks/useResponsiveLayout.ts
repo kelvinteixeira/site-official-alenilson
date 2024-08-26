@@ -4,8 +4,8 @@ export const useResponsiveLayout = () => {
   const isExtraSmall = useMediaQuery("(max-width:575px)");
   const isSmall = useMediaQuery("(min-width:576px) and (max-width:741px)");
   const isMedium = useMediaQuery("(min-width:742px) and (max-width:991px)");
-  const isLarge = useMediaQuery("(min-width:992px) and (max-width:1199px)");
-  const isExtraLarge = useMediaQuery("(min-width:1200px)");
+  const isLarge = useMediaQuery("(min-width:992px) and (max-width:1399px)");
+  const isExtraLarge = useMediaQuery("(min-width:1400px)");
 
   const getFontSize = (baseSize: number) => {
     if (isExtraSmall) return baseSize * 0.8;

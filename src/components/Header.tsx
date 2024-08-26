@@ -74,22 +74,7 @@ export const Header = () => {
                 Sobre mim
               </Link>
             </Button>
-            <Button
-              sx={{
-                color: isScrolled ? "#1A4583" : "#fff",
-
-                fontSize: isTablet ? 14 : 17,
-                letterSpacing: 2,
-                textTransform: "none",
-                "&:hover": {
-                  textDecoration: "underline",
-                },
-              }}
-            >
-              <Link to="depoiments" smooth={true} duration={500} offset={-50}>
-                Depoimentos
-              </Link>
-            </Button>
+            
             <Button
               sx={{
                 color: isScrolled ? "#1A4583" : "#fff",
@@ -109,6 +94,22 @@ export const Header = () => {
                 offset={-50}
               >
                 Hipnose clínica
+              </Link>
+            </Button>
+            <Button
+              sx={{
+                color: isScrolled ? "#1A4583" : "#fff",
+
+                fontSize: isTablet ? 14 : 17,
+                letterSpacing: 2,
+                textTransform: "none",
+                "&:hover": {
+                  textDecoration: "underline",
+                },
+              }}
+            >
+              <Link to="depoiments" smooth={true} duration={500} offset={-50}>
+                Depoimentos
               </Link>
             </Button>
             <Button

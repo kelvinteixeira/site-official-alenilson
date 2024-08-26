@@ -1,8 +1,11 @@
 import { Grid, Typography, useMediaQuery } from "@mui/material";
+import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
 
 export const AboutPsychotherapy = () => {
   const isMobile = useMediaQuery("(max-width:430px)");
   const isTablet = useMediaQuery("(max-width:820px)");
+  const { isExtraSmall, isMedium, isSmall } =
+    useResponsiveLayout();
   return (
     <>
       <Grid
@@ -24,7 +27,6 @@ export const AboutPsychotherapy = () => {
               fontWeight={"bold"}
               component={"span"}
               className="highlight"
-              
             >
               Hipnose Clínica??
             </Typography>
@@ -35,7 +37,7 @@ export const AboutPsychotherapy = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
             Você dever ter assistido vídeos com pessoas sendo hipnotizadas em
             que elas esqueciam por um certo momento o próprio nome, ou comiam
@@ -54,7 +56,7 @@ export const AboutPsychotherapy = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
             Meu trabalho como hipnólogo clínico é fundamentado na teoria e
             prática do célebre Milton Hyland Erickson, psicanalista e hipnólogo
@@ -70,7 +72,7 @@ export const AboutPsychotherapy = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
             A Hipnose Clínica que desenvolvo tem como finalidade a
             ressignificação de memórias traumáticas que, inconscientemente,
@@ -86,9 +88,10 @@ export const AboutPsychotherapy = () => {
             align="justify"
             marginBottom={1}
             variant="body2"
-            sx={{textIndent: "20px"}}
+            sx={{ textIndent: "20px" }}
           >
-            Convido-te a iniciar essa jornada nos labirintos da tua mente para poderes estar em outros níveis de realizações emocionais e noética.
+            Convido-te a iniciar essa jornada nos labirintos da tua mente para
+            poderes estar em outros níveis de realizações emocionais e noética.
           </Typography>
         </Grid>
         <Grid
@@ -107,6 +110,26 @@ export const AboutPsychotherapy = () => {
             }}
           />
         </Grid>
+      </Grid>
+      <Grid
+        container
+        marginTop={2}
+        justifyContent={"center"}
+        alignItems={"center"}
+        sx={{
+          bgcolor: "#6b8cb624",
+          height: isExtraSmall || isSmall ? 40 : 80,
+        }}
+      >
+        <Typography
+          fontSize={isExtraSmall || isSmall ? 6 : isMedium ? 15 : 20}
+          className="highlight"
+          fontWeight={"bolder"}
+          textTransform={"uppercase"}
+        >
+          Agende sua consulta online ou presencial, será um prazer ver você
+          voar!
+        </Typography>
       </Grid>
     </>
   );

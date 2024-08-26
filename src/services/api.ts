@@ -41,7 +41,7 @@ export const depoiments = [
 export const questions = [
   {
     id: 1,
-    question: "Terapia psicológica Online funciona?",
+    question: "Terapia psicológica online funciona?",
     answer: "As pesquisas mais recentes mostram que 85% das pessoas preferem a terapia psicológica online ou a acham tão boa quanto a presencial. Segundo o Conselho Federal de Psicologia, o acompanhamento online possui a mesma eficácia do acompanhamento presencial, além de ser mais em conta e não exigir deslocamentos."
   },
   {

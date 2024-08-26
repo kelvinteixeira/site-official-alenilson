@@ -16,10 +16,11 @@ export const FirstSection = () => {
         container
         className="bg"
         padding={2}
+        alignItems={"center"}
         justifyContent={
           isMedium || isSmall || isExtraSmall ? "center" : "right"
         }
-        height={isLarge  ? "100vh" : "auto"}
+        height={isLarge || isExtraLarge ? "100vh" : "auto"}
         sx={{
           backgroundColor: "#a8bbeca0",
         }}
@@ -101,7 +102,7 @@ export const FirstSection = () => {
             <img
               src="/images/alenilson2.png"
               style={{
-                width: 350,
+                width: isExtraLarge ? 500 : 350,
                 bottom: 0,
                 left: 0,
                 zIndex: 0,

@@ -3,8 +3,7 @@ import { depoiments } from "../services/api";
 import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
 
 export const Depoiments = () => {
-  const { isSmall, isExtraSmall, isMedium } =
-    useResponsiveLayout();
+  const { isSmall, isExtraSmall, isMedium } = useResponsiveLayout();
   return (
     <>
       <Grid
@@ -48,29 +47,16 @@ export const Depoiments = () => {
                   readOnly
                 />
               </Grid>
-              <Typography variant="body1" fontSize={isExtraSmall || isSmall ? 12 : 14} marginBottom={1}>
+              <Typography
+                variant="body1"
+                fontSize={isExtraSmall || isSmall ? 12 : 14}
+                marginBottom={1}
+              >
                 {depoiments.text}
               </Typography>
             </Grid>
           ))}
         </Grid>
-      </Grid>
-      <Grid
-        marginBottom={2}
-        container
-        justifyContent={"center"}
-        alignItems={"center"}
-        sx={{ bgcolor: "#6b8cb624", height: isExtraSmall || isSmall ? 40 : 80 }}
-      >
-        <Typography
-          fontSize={isExtraSmall || isSmall ? 8 : isMedium ? 15 : 20}
-          className="highlight"
-          fontWeight={"bolder"}
-          textTransform={"uppercase"}
-        >
-          Agende sua consulta online ou presencial, será um prazer ver você
-          voar!
-        </Typography>
       </Grid>
     </>
   );
